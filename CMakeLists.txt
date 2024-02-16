@@ -14,11 +14,14 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 
 set(TS_FILES SteamBlocker_tr_TR.ts)
 
+set(app_icon_resource_windows "${CMAKE_CURRENT_SOURCE_DIR}/res/res.rc")
+
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        ${app_icon_resource_windows}
         ${TS_FILES}
 )
 
